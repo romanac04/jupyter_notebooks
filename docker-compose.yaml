@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook
+    ports:
+      - 8888:10000
+    volumes:
+      - ./PySpark_Intro_(Part_1).ipynb:/home/PySpark_Intro_(Part_1).ipynb
+    working_dir: /home
+    
